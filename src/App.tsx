@@ -178,10 +178,6 @@ export default function App() {
             <p style={{ fontSize: 10, letterSpacing: "0.36em", color: GOLD, marginBottom: 20, fontWeight: 500 }}>
               AUTUMN / WINTER 2026
             </p>
-            <h1 className="font-display" style={{ fontSize: "clamp(38px,7vw,96px)", lineHeight:.95, fontWeight:500, marginBottom:52, letterSpacing:"-0.02em" }}>
-              静かな<br />強さを、<br />
-              <em className="gold-gradient" style={{ fontStyle:"italic" }}>纏う。</em>
-            </h1>
             <p style={{ fontSize:15, lineHeight:2, color:TEXT_MUTED, maxWidth:400, marginBottom:52, letterSpacing:"0.04em" }}>
               強さだけでなく、柔らかさや余裕も持つ。<br />
               品格ある男性のための、新しいラグジュアリー。
