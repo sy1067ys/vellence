@@ -158,27 +158,27 @@ export default function App() {
       <section style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", position: "relative", overflow: "hidden", background: BG }}>
         {/* Decorative V silhouette */}
         <div style={{
-          position: "absolute", right: "-4%", top: "50%", transform: "translateY(-50%)",
-          width: "52vw", maxWidth: 760, aspectRatio: "1",
-          opacity: .04,
+          position: "absolute", right: "-6%", bottom: "-14%",
+          width: "50vw", maxWidth: 720, aspectRatio: "0.8",
+          opacity: .03,
           background: `radial-gradient(ellipse at center, ${GOLD} 0%, transparent 72%)`,
           pointerEvents: "none",
         }} />
         <div style={{
-          position: "absolute", right: "6%", top: "50%", transform: "translateY(-50%)",
-          fontSize: "clamp(280px,38vw,560px)", lineHeight: 1,
+          position: "absolute", right: "4%", bottom: "-10%",
+          fontSize: "clamp(320px,42vw,680px)", lineHeight: .82,
           fontFamily: "'Playfair Display', serif", fontWeight: 700,
           color: "transparent",
-          WebkitTextStroke: `1px ${GOLD}18`,
+          WebkitTextStroke: `1px ${GOLD}15`,
           pointerEvents: "none", userSelect: "none",
         }}>V</div>
 
         <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 40px", width: "100%", paddingTop: 68 }}>
           <div style={{ maxWidth: 640, paddingTop: 40 }}>
-            <p style={{ fontSize: 10, letterSpacing: "0.36em", color: GOLD, marginBottom: 32, fontWeight: 500 }}>
+            <p style={{ fontSize: 10, letterSpacing: "0.36em", color: GOLD, marginBottom: 20, fontWeight: 500 }}>
               AUTUMN / WINTER 2026
             </p>
-            <h1 className="font-display" style={{ fontSize: "clamp(52px,9vw,108px)", lineHeight:.9, fontWeight:500, marginBottom:36, letterSpacing:"-0.02em" }}>
+            <h1 className="font-display" style={{ fontSize: "clamp(52px,9vw,108px)", lineHeight:.9, fontWeight:500, marginBottom:52, letterSpacing:"-0.02em" }}>
               静かな<br />強さを、<br />
               <em className="gold-gradient" style={{ fontStyle:"italic" }}>纏う。</em>
             </h1>
@@ -186,18 +186,27 @@ export default function App() {
               強さだけでなく、柔らかさや余裕も持つ。<br />
               品格ある男性のための、新しいラグジュアリー。
             </p>
-            <div style={{ display:"flex", gap:14, flexWrap:"wrap" }}>
-              <a href="#collection" style={{ padding:"13px 40px", background:GOLD_GRAD, color:BG, textDecoration:"none", fontSize:10, letterSpacing:"0.24em", fontWeight:700 }}>
+            <div style={{ display:"flex", alignItems:"center", gap:36, flexWrap:"wrap" }}>
+              <a href="#collection" style={{ padding:"18px 48px", background:GOLD_GRAD, color:BG, textDecoration:"none", fontSize:11, letterSpacing:"0.26em", fontWeight:700 }}>
                 EXPLORE COLLECTION
               </a>
-              <a href="#about" style={{ padding:"13px 40px", border:`1px solid ${GOLD}55`, color:GOLD, textDecoration:"none", fontSize:10, letterSpacing:"0.24em" }}>
+              <a href="#about" style={{
+                display:"flex", alignItems:"center", gap:10,
+                color:GOLD, textDecoration:"none", fontSize:10, letterSpacing:"0.24em", fontWeight:500,
+                borderBottom:"1px solid transparent", paddingBottom:2, transition:"border-color .2s",
+              }}
+                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.borderBottomColor = GOLD }}
+                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.borderBottomColor = "transparent" }}>
                 OUR STORY
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
             </div>
           </div>
 
           {/* Stats row */}
-          <div style={{ display:"flex", gap:0, marginTop:96, borderTop:`1px solid ${BORDER}`, paddingTop:40 }} className="stats-row">
+          <div style={{ position:"relative", marginTop:96, paddingTop:40 }}>
+            <div style={{ position:"absolute", top:0, left:0, right:0, height:1, background:`linear-gradient(90deg, ${GOLD}30, ${BORDER} 40%, ${BORDER} 60%, transparent)` }} />
+            <div style={{ display:"flex", gap:0 }} className="stats-row">
             {[
               { num:"12+",   label:"Years of Mastery" },
               { num:"100%",  label:"Handcrafted Details" },
@@ -206,12 +215,14 @@ export default function App() {
             ].map((s, i) => (
               <div key={s.label} style={{
                 flex:1, padding:"0 32px",
-                borderLeft: i===0 ? "none" : `1px solid ${BORDER}`,
+                position:"relative",
               }}>
+                {i !== 0 && <div style={{ position:"absolute", left:0, top:4, bottom:4, width:1, background:`linear-gradient(180deg, transparent, ${BORDER}, transparent)` }} />}
                 <p className="font-display gold-gradient" style={{ fontSize:"clamp(28px,3.5vw,44px)", fontWeight:700, lineHeight:1, marginBottom:8 }}>{s.num}</p>
                 <p style={{ fontSize:11, color:TEXT_MUTED, letterSpacing:"0.08em" }}>{s.label}</p>
               </div>
             ))}
+            </div>
           </div>
         </div>
 
