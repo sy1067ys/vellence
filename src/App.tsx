@@ -59,9 +59,9 @@ function NavBar() {
       backdropFilter: scrolled ? "blur(14px)" : "none",
       transition: "background .4s, border-color .4s",
     }}>
-      <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 40px", height: 88, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+      <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 40px", height: 104, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <a href="#" style={{ display: "flex", alignItems: "center", gap: 16, textDecoration: "none" }}>
-          <img src={logoImg} alt="VELLENCE" style={{ height: 56, width: 56, objectFit: "contain" }} />
+          <img src={logoImg} alt="VELLENCE" style={{ height: 76, width: 76, objectFit: "contain" }} />
           <span className="font-display gold-gradient" style={{ fontSize: 27, letterSpacing: "0.24em", fontWeight: 600 }}>VELLENCE</span>
         </a>
 
@@ -173,7 +173,7 @@ export default function App() {
           pointerEvents: "none", userSelect: "none",
         }}>V</div>
 
-        <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 40px", width: "100%", paddingTop: 88 }}>
+        <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 40px", width: "100%", paddingTop: 104 }}>
           <div style={{ maxWidth: 640, paddingTop: 40 }}>
             <p style={{ fontSize: 10, letterSpacing: "0.36em", color: GOLD, marginBottom: 20, fontWeight: 500 }}>
               AUTUMN / WINTER 2026
