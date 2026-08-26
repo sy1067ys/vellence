@@ -59,10 +59,10 @@ function NavBar() {
       backdropFilter: scrolled ? "blur(14px)" : "none",
       transition: "background .4s, border-color .4s",
     }}>
-      <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 40px", height: 68, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-        <a href="#" style={{ display: "flex", alignItems: "center", gap: 11, textDecoration: "none" }}>
-          <img src={logoImg} alt="VELLENCE" style={{ height: 38, width: 38, objectFit: "contain" }} />
-          <span className="font-display gold-gradient" style={{ fontSize: 19, letterSpacing: "0.26em", fontWeight: 600 }}>VELLENCE</span>
+      <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 40px", height: 88, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+        <a href="#" style={{ display: "flex", alignItems: "center", gap: 16, textDecoration: "none" }}>
+          <img src={logoImg} alt="VELLENCE" style={{ height: 56, width: 56, objectFit: "contain" }} />
+          <span className="font-display gold-gradient" style={{ fontSize: 27, letterSpacing: "0.24em", fontWeight: 600 }}>VELLENCE</span>
         </a>
 
         <ul className="nav-links" style={{ display: "flex", gap: 36, listStyle: "none", margin: 0, padding: 0 }}>
@@ -173,7 +173,7 @@ export default function App() {
           pointerEvents: "none", userSelect: "none",
         }}>V</div>
 
-        <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 40px", width: "100%", paddingTop: 68 }}>
+        <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 40px", width: "100%", paddingTop: 88 }}>
           <div style={{ maxWidth: 640, paddingTop: 40 }}>
             <p style={{ fontSize: 10, letterSpacing: "0.36em", color: GOLD, marginBottom: 20, fontWeight: 500 }}>
               AUTUMN / WINTER 2026
@@ -479,24 +479,6 @@ export default function App() {
               ))}
             </div>
           </div>
-        </div>
-      </Section>
-
-      {/* ── QUOTE ── */}
-      <Section alt>
-        <div style={{ maxWidth:700, margin:"0 auto", textAlign:"center" }}>
-          <div style={{ display:"flex", justifyContent:"center", gap:4, marginBottom:32 }}>
-            {[...Array(5)].map((_,i) => <span key={i} style={{ color:GOLD, fontSize:11 }}>★</span>)}
-          </div>
-          <blockquote className="font-editorial" style={{
-            fontSize:"clamp(18px,2.8vw,34px)", fontWeight:300, fontStyle:"italic",
-            lineHeight:1.7, color:"rgba(232,226,216,0.8)", marginBottom:32, letterSpacing:"0.01em",
-          }}>
-            "The Sovereign Suit changed how I approach every meeting.
-            I walk in knowing I am dressed at the highest standard.
-            That is the VELLENCE difference."
-          </blockquote>
-          <p style={{ fontSize:10, letterSpacing:"0.28em", color:GOLD }}>— KENJI YAMAMOTO, TOKYO</p>
         </div>
       </Section>
 
