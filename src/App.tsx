@@ -229,32 +229,26 @@ export default function App() {
 
         <Rule />
 
-        <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:"80px 100px", marginTop:80 }} className="two-col">
+        <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:"80px 100px", marginTop:80, position:"relative" }} className="two-col">
+          <div style={{ position:"absolute", left:"50%", top:4, bottom:4, width:1, background:`linear-gradient(180deg, transparent, ${BORDER}, transparent)` }} className="two-col-divider" />
           <div>
             <Eyebrow>VELLENCE とは</Eyebrow>
-            <h3 className="font-display" style={{ fontSize:"clamp(22px,2.6vw,36px)", fontWeight:500, lineHeight:1.2, marginBottom:24, letterSpacing:"-0.01em" }}>
+            <h3 className="font-display" style={{ fontSize:"clamp(22px,2.4vw,32px)", fontWeight:500, lineHeight:1.35, marginBottom:24, letterSpacing:"-0.01em" }}>
               派手に見せなくても、<br />
-              <em style={{ fontStyle:"italic", color:GOLD }}>自然と品格が伝わる</em><br />
-              男性のために。
+              <em style={{ fontStyle:"italic", color:GOLD }}>自然と品格が伝わる</em>男性のために。
             </h3>
             <p style={{ fontSize:14, lineHeight:2.1, color:TEXT_MUTED, letterSpacing:"0.04em" }}>
-              高級ブランドのような品質と世界観を持ちながら、
-              日常でも着用しやすい服を展開します。
-              強さだけでなく、柔らかさや余裕も持つ——
-              品格ある男性を、静かに表現するブランドです。
+              高級ブランドのような品質と世界観を持ちながら、日常でも着用しやすい服を展開します。強さだけでなく、柔らかさや余裕も持つ——品格ある男性を、静かに表現するブランドです。
             </p>
           </div>
           <div>
             <Eyebrow>ブランドコンセプト</Eyebrow>
-            <p className="font-display" style={{ fontSize:"clamp(18px,2vw,28px)", fontWeight:400, lineHeight:1.6, marginBottom:20, color:TEXT, letterSpacing:"-0.005em" }}>
+            <h3 className="font-display" style={{ fontSize:"clamp(22px,2.4vw,32px)", fontWeight:500, lineHeight:1.35, marginBottom:24, letterSpacing:"-0.01em" }}>
               「ブランドが目立つ服」ではなく、<br />
-              <em style={{ fontStyle:"italic", color:GOLD }}>&ldquo;着ている男性自身が魅力的に見える服&rdquo;</em>
-              を作ります。
-            </p>
-            <p style={{ fontSize:13, lineHeight:2.1, color:TEXT_MUTED, letterSpacing:"0.04em" }}>
-              素材の質、シルエット、縫製、細かなデザインによって、
-              着る人の品格を自然に引き出す。
-              それがVELLENCEの考える新しいラグジュアリーです。
+              <em style={{ fontStyle:"italic", color:GOLD }}>&ldquo;着ている男性自身が魅力的に見える服&rdquo;</em>を作ります。
+            </h3>
+            <p style={{ fontSize:14, lineHeight:2.1, color:TEXT_MUTED, letterSpacing:"0.04em" }}>
+              素材の質、シルエット、縫製、細かなデザインによって、着る人の品格を自然に引き出す。それがVELLENCEの考える新しいラグジュアリーです。
             </p>
           </div>
         </div>
@@ -519,6 +513,7 @@ export default function App() {
         @keyframes marquee { from { transform:translateX(0); } to { transform:translateX(-25%); } }
         @media(max-width:900px){
           .two-col{grid-template-columns:1fr !important;}
+          .two-col-divider{display:none !important;}
           .name-grid{grid-template-columns:1fr !important;}
           .name-grid>*:nth-child(2){display:none !important;}
           .pkg-panel{border-left:none !important;padding-left:0 !important;border-top:1px solid ${BORDER};padding-top:48px !important;}
