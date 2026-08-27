@@ -221,9 +221,9 @@ export default function App() {
       <Section id="about">
         <div style={{ textAlign:"center", marginBottom:96 }}>
           <Eyebrow>BRAND CONCEPT</Eyebrow>
-          <p style={{ fontSize:15, lineHeight:2, color:TEXT_MUTED, maxWidth:520, margin:"28px auto 0", letterSpacing:"0.04em" }}>
+          <p className="font-display" style={{ fontSize:"clamp(22px,3.2vw,36px)", lineHeight:1.6, fontWeight:500, color:TEXT, maxWidth:760, margin:"32px auto 0", letterSpacing:"-0.005em" }}>
             服で別人になるのではなく、その人が本来持っている<br />
-            自信や魅力を完成させる。<em style={{ fontStyle:"italic", color:`${GOLD}88` }}>存在を、完成させる。</em>
+            自信や魅力を完成させる。<em className="gold-gradient" style={{ fontStyle:"italic" }}>存在を、完成させる。</em>
           </p>
         </div>
 
