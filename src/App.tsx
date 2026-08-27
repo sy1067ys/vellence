@@ -175,9 +175,6 @@ export default function App() {
 
         <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 40px", width: "100%", paddingTop: 104 }}>
           <div style={{ maxWidth: 700, margin: "0 auto", paddingTop: 40, textAlign: "center" }}>
-            <p style={{ fontSize: 10, letterSpacing: "0.36em", color: GOLD, marginBottom: 20, fontWeight: 500 }}>
-              AUTUMN / WINTER 2026
-            </p>
             <p className="font-display" style={{ lineHeight:1.7, fontWeight:500, color:TEXT, marginBottom:52, letterSpacing:"-0.01em" }}>
               <span style={{ display:"block", fontSize:"clamp(14px,2.3vw,30px)" }}>強さだけでなく、柔らかさや余裕も持つ。</span>
               <span style={{ display:"block", fontSize:"clamp(12px,2vw,28px)" }}>品格ある男性のための、<em className="gold-gradient" style={{ fontStyle:"italic" }}>新しいラグジュアリー。</em></span>
@@ -196,28 +193,6 @@ export default function App() {
                 OUR STORY
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
-            </div>
-          </div>
-
-          {/* Stats row */}
-          <div style={{ position:"relative", marginTop:96, paddingTop:40, maxWidth:900, marginLeft:"auto", marginRight:"auto" }}>
-            <div style={{ position:"absolute", top:0, left:0, right:0, height:1, background:`linear-gradient(90deg, transparent, ${BORDER} 20%, ${BORDER} 80%, transparent)` }} />
-            <div style={{ display:"flex", gap:0, justifyContent:"center" }} className="stats-row">
-            {[
-              { num:"12+",   label:"Years of Mastery" },
-              { num:"100%",  label:"Handcrafted Details" },
-              { num:"3",     label:"Flagship Ateliers" },
-              { num:"∞",     label:"Presence Defined" },
-            ].map((s, i) => (
-              <div key={s.label} style={{
-                flex:1, padding:"0 32px",
-                position:"relative", textAlign:"center",
-              }}>
-                {i !== 0 && <div style={{ position:"absolute", left:0, top:4, bottom:4, width:1, background:`linear-gradient(180deg, transparent, ${BORDER}, transparent)` }} />}
-                <p className="font-display gold-gradient" style={{ fontSize:"clamp(28px,3.5vw,44px)", fontWeight:700, lineHeight:1, marginBottom:8 }}>{s.num}</p>
-                <p style={{ fontSize:11, color:TEXT_MUTED, letterSpacing:"0.08em" }}>{s.label}</p>
-              </div>
-            ))}
             </div>
           </div>
         </div>
