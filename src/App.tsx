@@ -174,15 +174,15 @@ export default function App() {
         }}>V</div>
 
         <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 40px", width: "100%", paddingTop: 104 }}>
-          <div style={{ maxWidth: 640, paddingTop: 40 }}>
+          <div style={{ maxWidth: 700, margin: "0 auto", paddingTop: 40, textAlign: "center" }}>
             <p style={{ fontSize: 10, letterSpacing: "0.36em", color: GOLD, marginBottom: 20, fontWeight: 500 }}>
               AUTUMN / WINTER 2026
             </p>
-            <p className="font-display" style={{ lineHeight:1.7, fontWeight:500, color:TEXT, maxWidth:600, marginBottom:52, letterSpacing:"-0.01em" }}>
+            <p className="font-display" style={{ lineHeight:1.7, fontWeight:500, color:TEXT, marginBottom:52, letterSpacing:"-0.01em" }}>
               <span style={{ display:"block", fontSize:"clamp(14px,2.3vw,30px)" }}>強さだけでなく、柔らかさや余裕も持つ。</span>
               <span style={{ display:"block", fontSize:"clamp(12px,2vw,28px)" }}>品格ある男性のための、<em className="gold-gradient" style={{ fontStyle:"italic" }}>新しいラグジュアリー。</em></span>
             </p>
-            <div style={{ display:"flex", alignItems:"center", gap:36, flexWrap:"wrap" }}>
+            <div style={{ display:"flex", alignItems:"center", justifyContent:"center", gap:36, flexWrap:"wrap" }}>
               <a href="#collection" style={{ padding:"18px 48px", background:GOLD_GRAD, color:BG, textDecoration:"none", fontSize:11, letterSpacing:"0.26em", fontWeight:700 }}>
                 EXPLORE COLLECTION
               </a>
@@ -200,9 +200,9 @@ export default function App() {
           </div>
 
           {/* Stats row */}
-          <div style={{ position:"relative", marginTop:96, paddingTop:40 }}>
-            <div style={{ position:"absolute", top:0, left:0, right:0, height:1, background:`linear-gradient(90deg, ${GOLD}30, ${BORDER} 40%, ${BORDER} 60%, transparent)` }} />
-            <div style={{ display:"flex", gap:0 }} className="stats-row">
+          <div style={{ position:"relative", marginTop:96, paddingTop:40, maxWidth:900, marginLeft:"auto", marginRight:"auto" }}>
+            <div style={{ position:"absolute", top:0, left:0, right:0, height:1, background:`linear-gradient(90deg, transparent, ${BORDER} 20%, ${BORDER} 80%, transparent)` }} />
+            <div style={{ display:"flex", gap:0, justifyContent:"center" }} className="stats-row">
             {[
               { num:"12+",   label:"Years of Mastery" },
               { num:"100%",  label:"Handcrafted Details" },
@@ -211,7 +211,7 @@ export default function App() {
             ].map((s, i) => (
               <div key={s.label} style={{
                 flex:1, padding:"0 32px",
-                position:"relative",
+                position:"relative", textAlign:"center",
               }}>
                 {i !== 0 && <div style={{ position:"absolute", left:0, top:4, bottom:4, width:1, background:`linear-gradient(180deg, transparent, ${BORDER}, transparent)` }} />}
                 <p className="font-display gold-gradient" style={{ fontSize:"clamp(28px,3.5vw,44px)", fontWeight:700, lineHeight:1, marginBottom:8 }}>{s.num}</p>
