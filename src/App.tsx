@@ -242,13 +242,13 @@ export default function App() {
             </p>
           </div>
           <div>
-            <Eyebrow>ブランドコンセプト</Eyebrow>
+            <Eyebrow>デザインの哲学</Eyebrow>
             <h3 className="font-display" style={{ fontSize:"clamp(22px,2.4vw,32px)", fontWeight:500, lineHeight:1.35, marginBottom:24, letterSpacing:"-0.01em" }}>
               「ブランドが目立つ服」ではなく、<br />
               <em style={{ fontStyle:"italic", color:GOLD }}>&ldquo;着ている男性自身が魅力的に見える服&rdquo;</em>を作ります。
             </h3>
             <p style={{ fontSize:14, lineHeight:2.1, color:TEXT_MUTED, letterSpacing:"0.04em" }}>
-              素材の質、シルエット、縫製、細かなデザインによって、着る人の品格を自然に引き出す。それがVELLENCEの考える新しいラグジュアリーです。
+              素材の質、シルエット、縫製、細かなデザインによって、着る人の品格を自然に引き出す。それがVELLENCEの考える新しいラグジュアリーです。細部への配慮が、着る人の自信につながると考えています。
             </p>
           </div>
         </div>
