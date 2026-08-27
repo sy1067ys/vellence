@@ -221,9 +221,9 @@ export default function App() {
       <Section id="about">
         <div style={{ textAlign:"center", marginBottom:96 }}>
           <Eyebrow>BRAND CONCEPT</Eyebrow>
-          <p className="font-display" style={{ fontSize:"clamp(22px,3.2vw,36px)", lineHeight:1.6, fontWeight:500, color:TEXT, maxWidth:760, margin:"32px auto 0", letterSpacing:"-0.005em" }}>
-            服で別人になるのではなく、その人が本来持っている<br />
-            自信や魅力を完成させる。<em className="gold-gradient" style={{ fontStyle:"italic" }}>存在を、完成させる。</em>
+          <p className="font-display" style={{ lineHeight:1.65, fontWeight:500, color:TEXT, maxWidth:760, margin:"32px auto 0", letterSpacing:"-0.005em" }}>
+            <span style={{ display:"block", fontSize:"clamp(13px,2.3vw,28px)" }}>服で別人になるのではなく、その人が本来持っている</span>
+            <span style={{ display:"block", fontSize:"clamp(16px,2.6vw,32px)" }}>自信や魅力、<em className="gold-gradient" style={{ fontStyle:"italic" }}>存在を完成させる。</em></span>
           </p>
         </div>
 
