@@ -202,9 +202,6 @@ export default function App() {
           <div style={{ width:1, height:44, background:`${GOLD}40` }} />
           <span style={{ fontSize:9, letterSpacing:"0.28em", color:TEXT_DIM }}>SCROLL</span>
         </div>
-        <p className="font-editorial nav-links" style={{ position:"absolute", bottom:44, right:40, fontSize:12, fontStyle:"italic", color:TEXT_DIM, letterSpacing:"0.1em" }}>
-          DEFINE YOUR PRESENCE.
-        </p>
       </section>
 
       {/* ── MARQUEE ── */}
