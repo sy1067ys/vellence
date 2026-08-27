@@ -221,11 +221,6 @@ export default function App() {
       <Section id="about">
         <div style={{ textAlign:"center", marginBottom:96 }}>
           <Eyebrow>BRAND CONCEPT</Eyebrow>
-          <h2 className="font-display" style={{ fontSize:"clamp(44px,7vw,88px)", fontWeight:500, lineHeight:.95, letterSpacing:"-0.02em" }}>
-            <span style={{ color:TEXT_DIM, fontSize:".82em" }} className="font-editorial"><em>DEFINE YOUR</em></span>
-            <br />
-            <span className="gold-gradient">PRESENCE.</span>
-          </h2>
           <p style={{ fontSize:15, lineHeight:2, color:TEXT_MUTED, maxWidth:520, margin:"28px auto 0", letterSpacing:"0.04em" }}>
             服で別人になるのではなく、その人が本来持っている<br />
             自信や魅力を完成させる。<em style={{ fontStyle:"italic", color:`${GOLD}88` }}>存在を、完成させる。</em>
