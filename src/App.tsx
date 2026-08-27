@@ -298,34 +298,6 @@ export default function App() {
             <em style={{ fontStyle:"italic", color:GOLD }}> 品格ある男性</em>
           </p>
         </div>
-
-        {/* Brand colors inline */}
-        <div style={{ marginTop:80 }}>
-          <div style={{ textAlign:"center", marginBottom:52 }}>
-            <Eyebrow>BRAND COLORS</Eyebrow>
-            <h3 className="font-display" style={{ fontSize:"clamp(24px,3vw,40px)", fontWeight:500, letterSpacing:"-0.01em" }}>ブランドカラー</h3>
-            <p style={{ fontSize:13, color:TEXT_MUTED, marginTop:14, letterSpacing:"0.04em", lineHeight:1.9 }}>
-              黒一色で冷たくなりすぎないように、シルバーとアイボリーで柔らかな高級感を加えています。
-            </p>
-          </div>
-          <div style={{ display:"grid", gridTemplateColumns:"repeat(4,1fr)", gap:2 }} className="color-grid">
-            {[
-              { swatch:"#0a0a0a", border:"1px solid rgba(255,255,255,0.07)", name:"ブラック",   en:"BLACK",    desc:"威厳・自信・重厚感" },
-              { swatch:"#2d2d2d", border:"none",                              name:"チャコール", en:"CHARCOAL", desc:"都会的・落ち着き・知性" },
-              { swatch:"#b8b8b8", border:"none",                              name:"シルバー",   en:"SILVER",   desc:"洗練・品質・未来感" },
-              { swatch:"#efe9d8", border:"none",                              name:"アイボリー", en:"IVORY",    desc:"温かさ・余裕・上品さ" },
-            ].map(c => (
-              <div key={c.en} style={{ border:c.border }}>
-                <div style={{ height:120, background:c.swatch }} />
-                <div style={{ padding:"20px 18px", background:BG_ALT }}>
-                  <p style={{ fontSize:9, letterSpacing:"0.26em", color:GOLD, marginBottom:5 }}>{c.en}</p>
-                  <p style={{ fontSize:15, fontWeight:500, color:TEXT, marginBottom:6 }}>{c.name}</p>
-                  <p style={{ fontSize:12, color:TEXT_MUTED, lineHeight:1.7, letterSpacing:"0.04em" }}>{c.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </Section>
 
       {/* ── LOGO MEANING ── */}
