@@ -178,9 +178,9 @@ export default function App() {
             <p style={{ fontSize: 10, letterSpacing: "0.36em", color: GOLD, marginBottom: 20, fontWeight: 500 }}>
               AUTUMN / WINTER 2026
             </p>
-            <p className="font-display" style={{ fontSize:"clamp(14px,2.3vw,30px)", lineHeight:1.7, fontWeight:500, color:TEXT, maxWidth:600, marginBottom:52, letterSpacing:"-0.01em" }}>
-              <span style={{ display:"block" }}>強さだけでなく、柔らかさや余裕も持つ。</span>
-              <span style={{ display:"block" }}>品格ある男性のための、<em className="gold-gradient" style={{ fontStyle:"italic" }}>新しいラグジュアリー。</em></span>
+            <p className="font-display" style={{ lineHeight:1.7, fontWeight:500, color:TEXT, maxWidth:600, marginBottom:52, letterSpacing:"-0.01em" }}>
+              <span style={{ display:"block", fontSize:"clamp(14px,2.3vw,30px)" }}>強さだけでなく、柔らかさや余裕も持つ。</span>
+              <span style={{ display:"block", fontSize:"clamp(12px,2vw,28px)" }}>品格ある男性のための、<em className="gold-gradient" style={{ fontStyle:"italic" }}>新しいラグジュアリー。</em></span>
             </p>
             <div style={{ display:"flex", alignItems:"center", gap:36, flexWrap:"wrap" }}>
               <a href="#collection" style={{ padding:"18px 48px", background:GOLD_GRAD, color:BG, textDecoration:"none", fontSize:11, letterSpacing:"0.26em", fontWeight:700 }}>
